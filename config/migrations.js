@@ -6,6 +6,10 @@ permissions =[
      'delete job',
      'update job',
 
+     'add user',
+     'delete user',
+     'veiw user',
+     'veiw all user',
      'update user'
 
     

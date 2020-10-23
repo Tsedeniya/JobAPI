@@ -1,7 +1,7 @@
 const userModel = require('../models/user-model');
 
 const Joi = require('joi');
-const userModel = require('../models/user-model');
+
 
 
 exports.create = async(req,res)=>{
