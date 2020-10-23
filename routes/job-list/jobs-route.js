@@ -8,7 +8,7 @@ const job = require('../../controllers/job-controller');
   //get one drug
   router.get('/:id',job.getjobById);
   //get all drugs
-  router.get('/',job.getAlljobs);
+  router.get('/jobs',job.getAlljobs);
   //search drugs by name 
   
 
