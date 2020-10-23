@@ -3,8 +3,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/job-list/index');
+var usersRouter = require('./routes/job-list/users-route');
+var jobRouter = require('./routes/job-list/jobs-route')
 var mongoose = require('./config/mongoose')
 var app = express();
 mongoose.connect();
@@ -16,5 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/jobs',jobRouter);
 
 module.exports = app;
